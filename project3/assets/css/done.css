@@ -1,0 +1,146 @@
+header {
+  overflow: hidden;
+  background-color: firebrick; 
+  top: 0;
+  width: 97.9%;
+  z-index: 1;
+  padding: 1em;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  margin-left: 5%;
+  float: left;
+}
+
+header li a {
+  float: left;
+  color: white;
+  background-color: brown;
+  text-align: center;
+  padding: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 35px;
+  border-radius: 45px;
+}
+
+header a.active {
+  background-color: red;
+  color: white;
+}
+
+header li a:link {
+  background-color: black;
+}
+
+header li a:hover {
+  background-color: green;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Architects Daughter', cursive;
+  background-image: url(../media/snow6.gif);
+  background-position: center; 
+  background-size: cover;
+}
+
+img.pic {
+  width: 100%;
+  height: auto;
+}
+
+div.outer {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+div.inner {
+  display: none;
+}
+
+a.back {
+  cursor: pointer;
+  position: absolute;
+  color: yellow;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  left: 270px;
+  top: 350px;
+}
+
+a.forward {
+  cursor: pointer;
+  position: absolute;
+  color: yellow;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  right: 270px;
+  top: 350px;
+}
+
+a.back:hover, a.forward:hover {
+  background-color: lightgray;
+  opacity: .75;
+}
+
+div.text {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+}
+
+div.change {
+  animation-name: change;
+  animation-duration: 1.2s;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 1.2s;
+}
+
+@-webkit-keyframes change {
+  from {
+    opacity: .3
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes change {
+  from {
+    opacity: .3
+  }
+  to {
+    opacity: 1
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li.home::before {
+  content: "📌";
+}

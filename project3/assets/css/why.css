@@ -1,0 +1,142 @@
+header {
+  overflow: hidden;
+  background-color: maroon; 
+  top: 0;
+  width: 97.9%;
+  z-index: 1;
+  padding: 1em;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  margin-left: 5%;
+  float: left;
+}
+
+header li a {
+  float: left;
+  color: white;
+  background-color: brown;
+  text-align: center;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 30px;
+  border-radius: 45px;
+}
+
+header a.active {
+  background-color: red;
+  color: white;
+}
+
+header li a:link {
+  background-color: black;
+}
+
+header li a:hover {
+  background-color: green;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Architects Daughter', cursive;
+}
+
+img.sun {
+  width: 100px;
+  height: auto;
+  float: left;
+}
+
+div.topbar {
+  text-align: center;
+  width: 100%;
+}
+
+div.outer {
+  display: block;
+  text-align: center;
+  max-width: 1200px;
+  font-size: 2em;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+div.inner {
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+img.pic {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+img.pic_fix {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-bottom: 42%;
+}
+
+div.hidden_fix {
+  position: absolute;
+  background-color: lightblue;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .7s ease;
+}
+
+div.inner:hover div.hidden_fix {
+  opacity: 1;
+}
+
+div.hidden {
+  position: absolute;
+  background-color: lightblue;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .7s ease;
+}
+
+div.inner:hover div.hidden {
+  opacity: 1;
+}
+
+div.hiddenText {
+  color: yellow;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

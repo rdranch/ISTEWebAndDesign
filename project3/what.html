@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<!-- Title and Fonts -->
+		<meta charset="utf-8">    
+		<link rel="stylesheet" type="text/css" href="assets/css/what.css">  
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Bungee%7CBungee+Shade%7CCovered+By+Your+Grace" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+		<title> Project 3 - What is it?</title>
+	</head>
+	<body>
+		<header>
+			<!-- Navbar with active point -->
+			<nav>
+				<ul class="navbar">
+	  				<li class="navbar"><a href="index.html" class="navbar">Home</a></li>
+	  				<li class="navbar"><a href="what.html" class="active">What is it?</a></li>
+	  				<li class="navbar"><a href="why.html" class="navbar">Why is it happening?</a></li>
+	  				<li class="navbar"><a href="done.html" class="navbar">What's being done?</a></li>
+	  				<li class="navbar"><a href="covid.html" class="navbar">COVID's impact</a></li>
+	  				<li class="navbar"><a href="resources.html" class="navbar">Resources</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Promotional topbar text to grab user in -->
+		<div class="headbox">
+			<h1>THIS IS IMPORTANT</h1>
+			<h2>Global Warming</h2>
+			<h3>MUST READ</h3>
+			<div id="clock">Time</div>
+		</div>
+
+		<script>
+			// Javascript clock script
+			var noon = 12;
+			// Function grabs current time and sets args
+			var showCurrentTime = function()
+			{
+			    var clock = document.getElementById('clock');
+			    var ct = new Date();
+			 
+			    var hours = ct.getHours();
+			    var minutes = ct.getMinutes();
+			    var seconds = ct.getSeconds();
+			    var timer = "AM";
+			 
+				  if (hours >= noon)
+				  {
+					  timer = "PM";
+				  }
+
+				  if (hours > noon)
+				  {
+					  hours = hours - 12;
+				  }
+			 
+			    if (minutes < 10)
+			    {
+			        minutes = "0" + minutes;
+			    }
+			 
+			    if (seconds < 10)
+			    {
+			        seconds = "0" + seconds;
+			    }
+
+			    var clockTime = hours + ':' + minutes + ':' + seconds + " " + timer;
+			 
+			    clock.innerText = clockTime;
+			};
+			// Function to constantly update HTML
+			var updater = function() 
+			{
+			  var time = new Date().getHours();
+			  showCurrentTime();
+			}
+			// Run functions
+			setInterval(updater, 1000);
+			updater();
+
+			//Create an array of images 
+			var imageArray = ["assets/media/iceberg.png", "assets/media/increase.png", "assets/media/seaincrease.png"];
+			//Save total size of array to variable arraySize
+			var arraySize = imageArray.length;
+			//Set wait time between slides in milliseconds 
+			setInterval(runit, 5000);
+			var x = 1; //Used to count up to arraySize
+			//Function runit play slideshow when called 
+			function runit() {
+			    //Set image to next picture in image array
+			    document.getElementById('slideshow').src = imageArray[x];
+			    //Increase count by 1
+			    x++;
+			    //If count has reached the last index of imageArray than set count back to starting index.
+			    if (x === arraySize) {
+			        x = 0;
+			    }
+			}
+		</script>
+		<!-- Informational text mixed with slideshow -->
+		<div class="main">
+			<p>In 2019, this 315 billion-tonne iceberg broke off of Antartica.</p>
+			<p>Normally, this wouldn't be possible unless an unusual event happened. In this case, global warming. </p>
+			<p class="sideText">Similar events have happened before this time and since that time. These event will continue to happen and will not stop.</p>
+			<div id="pic">
+				<img class="pic" id="slideshow" src="assets/media/iceberg.png" alt="Global Warming Trend" title="Global Warming Trend">  
+        	</div>
+			<p>Global warming, as denoted by Google, is <em>"a gradual increase in the overall temperature of the earth's atmosphere generally attributed to the greenhouse effect caused by increased levels of carbon dioxide, chlorofluorocarbons, and other pollutants."</em></p>
+			<p>The effect of global warming is not just limited to these glaciers. Ice on rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering sooner. There is an accelerated sea level rise and longer, more intense heat waves.</p>
+		</div>
+
+		<!-- Validators -->
+		<footer>
+			<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fsolace.ist.rit.edu%2F~rpd7831%2F140%2Fproject3%2Fwhat.html"><img src="https://github.com/rdranch/ISTEWebAndDesign/blob/main/html-5-icon-2.png?raw=true" alt="HTML5 Validated" title="HTML Validated" style="width:75px; height:auto;"></a>
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsolace.ist.rit.edu%2F%7Erpd7831%2F140%2Fproject3%2Fwhat.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" title="CSS validated" style="width:75px; height:auto;"></a>
+		</footer>
+	</body>
+</html>

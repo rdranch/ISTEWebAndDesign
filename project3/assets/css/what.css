@@ -1,0 +1,97 @@
+header {
+  overflow: hidden;
+  background-color: #f16059;
+  top: 0;
+  width: 97.9%;
+  z-index: 1;
+  padding: 1em;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  margin-left: 5%;
+  float: left;
+}
+
+header li a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 35px;
+  border-radius: 45px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+header li a:hover {
+  background-color: green;
+}
+
+header a.active {
+  background-color: red;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f16059;
+}
+
+div.headbox h1 {
+  font-family: 'Bungee Shade', cursive;
+}
+
+div.headbox {
+  font-family: 'Bungee', cursive;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  line-height: 90%
+}
+
+div #clock {
+  font-size: 36px;
+  display: block;
+  padding: 5px 0px;
+}
+
+img.pic {
+  float: right;
+  width: 50%;
+  height: auto;
+}
+
+div.main {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+  padding-bottom: 55%;
+  margin-bottom: 5%;
+  border: 3px solid black;
+}
+
+p {
+  padding-left: 10px;
+  font-family: 'Bungee', cursive;
+  color: #222;
+  float: left;
+}
+p.sideText {
+  width: 40%;
+}
+
+img.inc {
+  width: 50%;
+  height: auto;
+}

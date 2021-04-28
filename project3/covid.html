@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<!-- Title and Fonts -->
+		<meta charset="utf-8">    
+		<link rel="stylesheet" type="text/css" href="assets/css/covid.css">  
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+		<title> Project 3 - COVID Impact</title>
+	</head>
+	<body>
+		<header>
+			<!-- Navbar with active point -->
+			<nav>
+				<ul class="navbar">
+	  				<li class="navbar"><a href="index.html" class="navbar">Home</a></li>
+	  				<li class="navbar"><a href="what.html" class="navbar">What is it?</a></li>
+	  				<li class="navbar"><a href="why.html" class="navbar">Why is it happening?</a></li>
+	  				<li class="navbar"><a href="done.html" class="navbar">What's being done?</a></li>
+	  				<li class="navbar"><a href="covid.html" class="active">COVID's impact</a></li>
+	  				<li class="navbar"><a href="resources.html" class="navbar">Resources</a></li>
+				</ul>
+			</nav>
+		</header>
+		<script>
+			// Script to hide and show text depending on if user is hovering over text.
+			// Javascript way of accomplishing the CSS task done in 'why' - not as graceful
+		  function show(id) {
+		  	if (id == 1) {
+		    	document.getElementById(id).innerHTML = "Carbon Dioxide: Increase of 416<sup>PPM/year</sup>"
+		    }
+		    if (id == 2) {
+		    	document.getElementById(id).innerHTML = "Global Temp: Increase of 2.1<sup>oF since 1880</sup>"
+		    }
+		    if (id == 3) {
+		    	document.getElementById(id).innerHTML = "Arctic Ice Min: Decrease of 13.1<sup>%/decade</sup>"
+		    }
+		    if (id == 4) {
+		    	document.getElementById(id).innerHTML = "Sea Level: Increase of 3.3<sup>mm/year</sup>"
+		    }
+		  }
+		  function hide(id) {
+		  	if (id == 1){
+		  		document.getElementById(id).innerHTML = "Carbon dioxide: Levels in the air are at their peak in 650,000 years"
+		  	}
+		  	if (id == 2){
+		  		document.getElementById(id).innerHTML = "19 of the warmest years have occurred since 2000"
+		  	}
+		  	if (id == 3){
+		  		document.getElementById(id).innerHTML = "In 2012, Arctic summer sea ice shrank to the lowest extent on record"
+		  	}
+		  	if (id == 4){
+		  		document.getElementById(id).innerHTML = "Global average sea level has risen nearly 7\" (178 mm) over the last 100 years"
+		  	}
+		  }
+		</script>
+
+		<div class="back">
+			<!-- Background water image -->
+			<video autoplay loop="loop" muted="muted" style="width:100%">
+				<source src="assets/media/water.mp4" type="video/mp4">
+			</video>
+			<!-- General COVID text explanation -->
+			<h2>COVID on Global warming</h2>
+			<p class="text">
+				Among the many drawbacks of COVID, including the closure of businesses, inability to travel, and working/learning from home, we have seen the positive sharp reduction in our consumption of fossil fuels. The result of this is a significant reduction in greenhouse house emissions bringing us rapidly closer to the goal made by the Paris Climate agreement but the big question looming is if this will continue.
+
+				<br><br>
+
+				Many scientists argue that this gas reduction depends largely on the long-term effects of the pandemic. Scientists note that while future structural changes such as a reduction in the number of annual flights might reduce emissions somewhat, this reduction would be nowhere close to the reduction seen in the height of the pandemic in 2020. Researchers at MIT conducted a study in which they found that the "projections of global economic activity with and without the pandemic show only a small impact of Covid-19 on emissions in 2030 and beyond,". Emeritus John Reilly, the MIT research terms lead author continues by saying "while pandemic-induced economic shocks will likely have little direct effect on long-term emissions, they may well have a significant indirect effect on the level of investment that nations are willing to commit to meet or beat their Paris emissions targets." In short, Reilly argues that the significant decrease in carbon emissions makes the goal of hitting the Paris target more marketable to the political world as we've already seen significant progress.
+
+				<br><br>
+
+				Other scientists at NCAR noted a different effect. While they admitted that there was a big decline in the number of emissions from the worlds biggest emitters, they noted that the global temperature had actually risen. NCAR scientist and researcher Andrew Gettelman states "Pollution cools the planet, so it makes sense that pollution reductions would warm the planet." These researchers highlight the complex issue of conflicting influences from carbon emissions where aersol tends to brighten clouds and reflect heat from the Sun back into space, carbon dioxide and other greenhouse gases have the opposite effect, trapping heat near the planet's surface and elevating temperatures.
+			</p>
+			<!-- Data to support above claims -->
+			<img class="backpic" src="assets/media/covid1.png" alt="COVID impact and prediction" title="COVID impact and prediction">
+			<img class="backpic2" src="assets/media/covid2.png" alt="COVID impact and prediction" title="COVID impact and prediction">
+			<img class="backpic3" src="assets/media/covid3.png" alt="COVID impact and prediction" title="COVID impact and prediction">
+		</div>
+		<!-- Bottom 'navbar' with javascript alerts -->
+		<ul class="innernav">
+		  <li><a href="javascript:alert('Carbon dioxide: Levels in the air are at their highest in 650,000 years')" id="1" onmouseover="hide('1')" onmouseout="show('1')">Carbon Dioxide: Increase of 416<sup>PPM/year</sup></a></li>
+		  <li><a href="javascript:alert('Nineteen of the warmest years have occurred since 2000')" id="2" onmouseover="hide('2')" onmouseout="show('2')">Global Temp: Increase of 2.1<sup>oF since 1880</sup></a></li>
+		  <li><a href="javascript:alert('In 2012, Arctic summer sea ice shrank to the lowest extent on record')" id="3" onmouseover="hide('3')" onmouseout="show('3')">Arctic Ice Min: Decrease of 13.1<sup>%/decade</sup></a></li>
+		  <li><a href="javascript:alert('Global average sea level has risen nearly 7 in. (178 mm) over the past 100 years')" id="4" onmouseover="hide('4')" onmouseout="show('4')">Sea Level: Increase of 3.3<sup>mm/year</sup></a></li>
+		</ul>
+		<!-- Validators -->
+		<footer>
+			<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fsolace.ist.rit.edu%2F~rpd7831%2F140%2Fproject3%2Fcovid.html"><img src="https://github.com/rdranch/ISTEWebAndDesign/blob/main/html-5-icon-2.png?raw=true" alt="HTML5 Validated" title="HTML Validated"></a>
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsolace.ist.rit.edu%2F%7Erpd7831%2F140%2Fproject3%2Fcovid.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" title="CSS validated"></a>
+		</footer>
+	</body>
+</html>

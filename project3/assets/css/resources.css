@@ -1,0 +1,61 @@
+header {
+  overflow: hidden;
+  background-color: lightgray; 
+  top: 0;
+  width: 97.9%;
+  z-index: 1;
+  padding: 1em;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  margin-left: 5%;
+  float: left;
+}
+
+header li a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 35px;
+  border-radius: 45px;
+}
+
+header li a:hover {
+  background-color: green;
+}
+
+header a.active {
+  background-color: red;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  font-family: 'Architects Daughter', cursive;
+  background-position: center; 
+  background-size: cover;
+}
+
+div.main{
+  width: 42em;font: 1em/1.4 "Cambria",Georgia, sans-serif;
+}
+    
+.ref-apa h2 span, .ref-apa dt span {
+  font-size: .76em;
+  font-weight: normal;
+  opacity:.3;
+}

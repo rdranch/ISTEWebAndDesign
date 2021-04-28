@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<!-- Title and Fonts -->
+		<meta charset="utf-8">    
+		<link rel="stylesheet" type="text/css" href="assets/css/done.css">  
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+		<title> Project 3 - What's being done?</title>
+	</head>
+	<body>
+		<header>
+			<!-- Navbar with active point -->
+			<nav>
+				<ul class="navbar">
+	  				<li class="navbar"><a href="index.html" class="navbar">Home</a></li>
+	  				<li class="navbar"><a href="what.html" class="navbar">What is it?</a></li>
+	  				<li class="navbar"><a href="why.html" class="navbar">Why is it happening?</a></li>
+	  				<li class="navbar"><a href="done.html" class="active">What's being done?</a></li>
+	  				<li class="navbar"><a href="covid.html" class="navbar">COVID's impact</a></li>
+	  				<li class="navbar"><a href="resources.html" class="navbar">Resources</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Alternative slideshow which can continuously cycle through with background text -->
+		<div class="outer">
+			<div class="inner change">
+				<img src="assets/media/done0.jpg" alt="Green energy" title="Solar panels" class="pic">
+				<div class="text">
+					Scientists are currently developing ways for sustainable hydrogen production. The leading development is hydropower which smashes rocks and releases these natural gases. These gases are fed into 0 emission fuel cells for electricity generation. Increased energy efficiency and an increase of the use of renewable energy will reduce the effects of climate change.
+				</div>
+			</div>
+			<div class="inner">
+				<img src="assets/media/done1.png" alt="House conservation" title="House conservation" class="pic">
+				<div class="text">
+					Many house amenities contribute to climate change. The efforts of one are not enough, we must all contribute to see the effect. Home users can do the following to contribute:
+					<ul>
+						<li class="home">Take shorter showers</li>
+						<li class="home">Turn off the lights when you aren't in the room</li>
+						<li class="home">Use more power efficient light bulbs</li>
+						<li class="home">Install solar panels</li>
+						<li class="home">Wash dishes by hand</li>
+						<li class="home">Eat less meat</li>
+						<li class="home">Plant trees</li>
+						<li class="home">Recycle and compost</li>
+					</ul>
+				</div>
+			</div>
+			<div class="inner">
+				<img src="assets/media/done2.jpg" alt="What you buy" title="What you buy" class="pic">
+				<div class="text" >
+					As of 2020, the US was ranked #2 in carbon emissions at just over 1/2 of the emissions in Gigatons that China releases. Many of what we do daily contributes to this. The food we eat, the heating we use, the things we buy, and the transportation we use all contribute to global warming.
+				</div>
+			</div>
+			<div class="inner">
+				<img src="assets/media/meat.png" alt="The meat we eat" title="The meat we eat" class="pic">
+				<div class="text">
+					Spread of meat-based emissions
+					<br>It's evident that meat-based products 
+					<br>contribute far more than plant based products.
+				</div>
+			</div>
+			<div class="inner">
+				<img src="assets/media/transportation.png" alt="The transportation we use" title="The transportation we use" class="pic">
+				<div class="text">Spread of transportation-based emissions</div>
+			</div>
+			<div class="inner">
+				<img src="assets/media/buy.png" alt="The things we buy" title="The things we buy" class="pic">
+				<div class="text">Spread of purchased emissions</div>
+			</div>
+			<a class="back" onclick="slide(-1)">&#x3c;</a>
+			<a class="forward" onclick="slide(1)">&#x3e;</a>
+		</div>
+
+		<script>
+			// Script to cycle through pictures infinitely but manually
+			var index = 1;
+			showSlides(index);
+			// Function to increment positively or negatively the slides
+			function slide(val) {
+			    showSlides((index += val));
+			}
+			// Function to hide and replace old picture with new picture
+			function showSlides(val) {
+			    var i;
+			    var slides = document.getElementsByClassName("inner");
+			    if (val > slides.length) {
+			        index = 1;
+			    }
+			    if (val < 1) {
+			        index = slides.length;
+			    }
+			    for (i = 0; i < slides.length; i++) {
+			        slides[i].style.display = "none";
+			    }
+			    slides[index - 1].style.display = "block";
+			}
+		</script>
+		<!-- Validators -->
+		<footer>
+			<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fsolace.ist.rit.edu%2F~rpd7831%2F140%2Fproject3%2Fdone.html"><img src="https://github.com/rdranch/ISTEWebAndDesign/blob/main/html-5-icon-2.png?raw=true" alt="HTML5 Validated" title="HTML Validated" style="width:75px; height:auto;"></a>
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsolace.ist.rit.edu%2F%7Erpd7831%2F140%2Fproject3%2Fdone.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" title="CSS validated" style="width:75px; height:auto;"></a>
+		</footer>
+	</body>
+</html>
