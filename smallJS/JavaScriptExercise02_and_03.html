@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset=utf-8 />
+<title>Get elements from a form</title>
+<style>
+    #movingText  {
+        position:absolute;
+        top:180px;
+        left:10px;
+        margin-left: 10px;
+    }
+    
+</style>
+<script src="javaScript140.js"></script>
+</head>
+<body>
+	<h2>JavaScript Exercise 2</h2> 
+	<form id="regForm">
+		First name: <input type="text" id="fname" value="Boo"><br>
+		Last name: <input type="text" id="lname" value="Radley"><br>
+		<input type="button" onclick="getFormValues();" value="Submit">
+	</form>
+    <div id = "movingText">
+    <h2>JavaScript Exercise 3</h2> 
+    <p id = "text">I Move</p>  
+    <input type="button" onclick="move();" value="Move Test">
+    </div>    
+     
+</body>
+</html>
