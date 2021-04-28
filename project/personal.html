@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">    
+		<title> My Personal life </title>
+		<link rel="stylesheet" type="text/css" href="assets/css/personal.css">
+    </head>
+    <body>
+		<div class="topnav">
+			<a class="active" href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="education.html">Education</a>
+				<a href="personal.html">Personal</a>
+		</div>
+		<br>
+		<script>
+			function popritsec() {
+			var popupritsec = document.getElementById('popupritsec');
+			popupritsec.classList.toggle('show');
+			}
+			function popmma() {
+			var popupmma = document.getElementById('popupmma');
+			popupmma.classList.toggle('show');
+			}
+			function popgames() {
+			var popupgames = document.getElementById('popupgames');
+			popupgames.classList.toggle('show');
+			}
+		</script>
+		<div class="title_card"> 
+			<p>Hello! I am <strong>Russell Dranch</strong></p>
+			<p>This is information relevant to me! </p>
+			<p>Hover your mouse over the pictures to get pop-up text relating to it! :)</p>
+		</div>
+		
+		<div class="information">
+			<div class="ritsec">
+				<img src="assets/media/ritsec.png" onmouseover="popritsec()" class="ritsecpic" alt="#">
+				<div class="ritsecpop">
+					<span class="ritsecpoptext" id="popupritsec">  
+					I am part of the RITSEC club at RIT. I used to frequently attend meeting but that hasn't happened as often since COVID began. Besides RITSEC,
+					I do a lot of security work which has led to me participating in 2 RITSEC competitions.
+					</span>
+				</div>
+			</div>
+			<div class="mma">
+				<img src="assets/media/mma.png" onmouseover="popmma()" class="mmapic" alt="#">
+				<div class="mmapop">
+					<span class="mmapoptext" id="popupmma">
+					I've been doing MMA (boxing, wrestling) since I was pretty young. It used to be 'self-defense' for me but as I'm older and don't usually
+					scrap it out with people, it's become sort of an exercise. I'm pretty good at it if I do say so myself. I think the big issue for people is they
+					are scared to get hit and to hit but you need the attitude to fight or you'll never get good.
+					</span>
+				</div>
+			</div>
+			<div class="games">
+				<img src="assets/media/games.png" onmouseover="popgames()" class="gamespic" alt="#">
+				<div class="gamespop">
+					<span class="gamespoptext" id="popupgames">
+					In my free time, I play video games. I think this is pretty typical for any security student, especially ones at RIT. Been doing it since I
+					was old enough to use a computer. Good times.
+					</span>
+				</div>
+			</div>
+		</div>
+		
+	<!-- 
+	Hobbies, clubs, and other items of interest that relate to your background.
+	Include anything relevant like interests and pastimes that make you the amazing person you are.
+	-->
+	</body>
+</html>
