@@ -1,0 +1,111 @@
+html * {
+	font-family: Roboto, sans-serif;
+}
+
+body {
+	background-color: tan;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.title_card {
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.ritsecpic {
+	height: auto;
+	width: 150px;
+	padding: 25px;
+}
+
+.ritsecpop {
+    display: inline-block;
+}
+.ritsecpop .ritsecpoptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #b1b1b1;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    color: #fff;
+    border-radius: 6px;
+	right: 20px;
+	bottom: 45px;
+}
+.ritsecpop .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.mmapop {
+    display: inline-block;
+}
+.mmapop .mmapoptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #b1b1b1;
+    color: #fff;
+    border-radius: 6px;
+    right: 20px;
+	bottom: 100px;
+}
+.mmapop .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.mmapic {
+	height: auto;
+	width: 150px;
+	padding: 25px;
+}
+
+
+.gamespop {
+    display: inline-block;
+}
+.gamespop .gamespoptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #b1b1b1;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    right: 20px;
+	bottom: 85px;
+}
+.gamespop .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.gamespic {
+	height: auto;
+	width: 150px;
+	padding: 25px;
+}
