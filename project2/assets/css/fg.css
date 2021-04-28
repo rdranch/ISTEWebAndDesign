@@ -1,0 +1,123 @@
+body {
+  background-color: gray;
+}
+
+div.centerbar {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+div.sidebar_left {
+  width: 25%;
+  float: left;
+}
+
+div.sidebar_right {
+  width: 20%;
+  float:left;
+  margin-left: 2%;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 7.50%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #111;
+}
+
+div.sectionimg {
+  background-image: url("../media/pdpbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  border: 2px solid black;
+}
+
+div.section {
+  color: pink;
+  padding: 10px;
+}
+
+img.banner {
+  width: 100%;
+  height:auto;
+}
+
+td a {
+  text-decoration: none;
+}
+
+td a:visited {
+  color: lightgray;
+}
+
+td a:link {
+  color: lightblue;
+}
+
+td a:hover {
+  color: black;
+}
+
+td a:active {
+  color: red;
+}
+
+th {
+  background-color: lightgray;
+  color: black;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 3px;
+  color: white;
+}
+
+table {
+  border: 1px solid black;
+  background-color: gray;
+}
+
+div.sidebar_left img.lob {
+  width: 85%;
+  height: auto;
+}
+
+div.sidebar_right img.lob {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 80%;
+  padding-top: 1%;
+  margin-left: 10%;
+  border-top: 2px solid black;
+  clear:both;
+  text-align: center;
+}

@@ -1,0 +1,139 @@
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header {
+  overflow: hidden;
+  /* font-family: 'Vollkorn', serif; */
+  background-color: #f1f1f1;
+  /*padding: 20px 10px;
+  position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 35px;
+  border-radius: 45px;
+}
+
+header li a:hover {
+  background-color: #111;
+}
+
+img.toplogo {
+  width: 20%;
+  height: auto;
+  float: right;
+  padding-right: 4%;
+  padding-bottom: 1%;
+}
+
+img.topimg {
+  width: 75%;
+  height: auto;
+  float:left;
+  margin-right: 3px;
+}
+
+figcaption.toplogo {
+  float: right;
+  padding-right: 5px;
+}
+
+h2.nametag {
+  float:left;
+}
+
+figcaption.toppic {
+  line-height: 100%;
+}
+
+div.spacer {
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 10px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+p.spaceauthor {
+  padding-bottom: 10px;
+  border-bottom: 5px solid black;
+  text-shadow: 1px 1px 1px red;
+  clear: left;
+}
+
+img.twitter {
+  width: 25%;
+  height: auto;
+}
+
+img.reddit {
+  width: 20%;
+  height: auto;
+  padding-bottom: 3px;
+}
+
+img.twitch {
+  width: 20%;
+  height: auto;
+}
+
+img.youtube {
+  width: 25%;
+  height: auto;
+}
+
+div.social {
+  border: 4px solid black;
+  width: 20%;
+  float:left;
+
+}
+
+div.desc {
+  border: 4px solid black;
+  float:left;
+  width: 20%;
+  margin-top: 5px;
+  padding-left: 3px;
+  line-height: 100%;
+  background-color: burlywood;
+}
+
+article.main {
+  clear: left;
+  padding-top: 5px;
+  line-height: 100%;
+  font-size: 125%;
+}
+
+footer {
+  width: 80%;
+  padding-top: 1%;
+  margin-left: 10%;
+  border-top: 2px solid black;
+  clear:both;
+  text-align: center;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="utf-8">    
+		<link rel="stylesheet" type="text/css" href="assets/css/vids.css">  
+		<link href="http://fonts.cdnfonts.com/css/feast-of-flesh-bb" rel="stylesheet">
+		<title> Project 2 - Popular Videos </title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="navbar">
+	  				<li class="navbar"><a href="index.html" class="navbar">Home</a></li>
+	  				<li class="navbar"><a href="vids.html" class="navbar">Popular Videos</a></li> <!-- For popular videos -->
+	  				<li class="navbar"><a href="fg.html" class="navbar">Films & Games</a></li>
+	  				<li class="navbar"><a href="family.html" class="navbar">Family</a></li>
+	  				<li class="navbar"><a href="ref.html" class="navbar">References</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--<img src="assets/media/background.png" class="background" alt="PewDiePie background" title="PewDiePie background"> -->
+		<script>
+			var frames = document.getElementsByTagName("iframe");
+			var last = []
+			function hide(){
+				/*
+				last.push(document.getElementById('options').value)
+
+				if (last.length >= 2) {
+					frames[last.length-2].style.display = "none";
+					frames[last.length-2].src = frames[last.length-2].src; 
+				}
+					The code gets buggy when you add duplicates of the same element into the array "last".
+					(i.e going to congratulations, switching to level7, then going back to congratulations.)
+					One way to fix this would be to have a function similar to this that activates after the second onchange()
+					and only stores one variable.
+
+					Before, I just went through every frame and cleared and refreshed them but that had tons of overhead (to reload every page every).
+					This solution **only** reloads the last page, but as I mentioned above, it has issues.
+				*/
+
+				for (var i=0; i < frames.length; i++){
+					frames[i].src = frames[i].src;
+					frames[i].style.display = "none";
+				}
+
+			}
+
+			function check(){
+				var iframe = document.getElementById('options').value;
+				//document.getElementsByTagName(last).src = document.getElementsByTagName(last).src; 
+				if(document.getElementById('options').value == "") {
+					iframe.style.display = "none"
+				}
+				else if(document.getElementById('options').value == "lasagna") {
+					hide()
+					document.getElementById("lasagna_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "congratulations") {
+					hide()
+					document.getElementById("congratulations_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "level7") {
+					hide()
+					document.getElementById("level7_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "funny") {
+					hide()
+					document.getElementById("funny_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "ruby") {
+					hide()
+					document.getElementById("ruby_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "rewind") {
+					hide()
+					document.getElementById("rewind_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "funny2") {
+					hide()
+					document.getElementById("funny2_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "jabba") {
+					hide()
+					document.getElementById("jabba_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "100") {
+					hide()
+					document.getElementById("100_frame").style.display = "inline"
+				}
+				else if(document.getElementById('options').value == "funnygaming") {
+					hide()
+					document.getElementById("funnygaming_frame").style.display = "inline"
+				}
+			}
+		</script>
+
+
+		<img src="https://yt3.ggpht.com/wuqXYCeCdttO0TcwBJR2yy0uJP2hPwTPdrDQpjD00t0Xd_81t6dYeLdVMR24ArD4kuIpWO4hWg=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="PewDiePie banner" title="PewDiePie banner" class="banner">
+
+		<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6Dh-RL__uN4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		<div class="column_one">
+			<label class="option" for="options">Choose a popular video:</label>
+			<select class="option" id="options" onchange="check();">
+				<option value="" selected disabled hidden>--Please choose an option--</option>
+				<option value="lasagna">bi#$% lasagna (EXPLICIT)</option>
+				<option value="congratulations">Congratulations</option>
+				<option value="level7">LEVEL 7 | I'M NOT CRAZY</option>
+				<option value="funny">A Funny Montage</option>
+				<option value="ruby">THE RUBY PLAYBUTTON</option>
+				<option value="rewind">YouTube Rewind 2018, but it's actually good</option>
+				<option value="funny2">FUNNY MONTAGE...#2</option>
+				<option value="jabba">Jabba the Hutt by Schmoyoho</option>
+				<option value="100">Unboxing 100 MIL YouTube AWARD!!</option>
+				<option value="funnygaming">FUNNY GAMING MONTAGE!</option>
+			</select>
+		</div>
+			<iframe id="lasagna_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/6Dh-RL__uN4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="congratulations_frame" width="560" height="315" src="https://www.youtube.com/embed/PHgc8Q6qTjc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="display: none" allowfullscreen></iframe>
+
+			<iframe id="level7_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/MsplPPW7tFo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="funny_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/gRyPjRrjS34" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="ruby_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/7Vj5M0qKh8g" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="rewind_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/By_Cn5ixYLg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="funny2_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/MkXVM6ad9nI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="jabba_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/lxw3C5HJ2XU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="100_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/DYlesHOaPkY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe id="funnygaming_frame" style="display: none" width="560" height="315" src="https://www.youtube.com/embed/rc1XYAJCZ80" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<div class="column_two">
+			<div class="desc">
+				<p><strong>PewDiePie</strong>, the only YouTuber so far to hold the #1 spot for 6 consecutive years, unsuprisingly also has some of the most popular videos on YouTube.</p>
+				<p>The videos on this page are his <strong>top 10</strong> videos, ever. And for a good reason. Here is the breakdown of these videos: </p>
+				<dl>
+					<dt>Congratulations, bi#$% lasagna (EXPLICIT), Jabba the Hutt by Schmoyoho </dt>
+						<dd>These 3 videos are extremely popular music videos about subjects or controversies that were popular at the time.</dd>
+					<dt>LEVEL 7 | I'M NOT CRAZY</dt>
+						<dd>This video is from an extremely popular Netflix series based off horror game "Outlast" that would feature PewDiePie in an asylum-like scene for many episodes. The episodes got recorded and finished but ended up not getting released due to controversy that PewDiePie got into.</dd>
+					<dt>THE RUBY PLAYBUTTON and Unboxing 100 MIL YouTube AWARD!!</dt>
+						<dd>It's unsurprising to fans of PewDiePie that these would be up there. The ruby playbutton, better known as the reward for hitting 50 million subscribers on YouTube, was a milestone for both PewDiePie and the platform as a whole. No one had done it before and this left even more anticipation for the second award, the 100 million award. This is the other video but he was not the first to reach it. This was at the height of his controversy with T-Series, an Indian YouTube video/movie company. PewDiePie's hit song "Congratulations" is him making fun of them during this time.</dd>
+					<dt>YouTube Rewind 2018, but it's actually good</dt>
+						<dd>YouTube is infamous for it's annual release of "YouTube Rewind" where they feature the most popular creators of the year in one video. They are infamous because they tend to not <em>really</em> feature the top influencer's in the community, rather, whoever meets their interests. In 2018, this was at it's peek and PewDiePie decided to make his own rewind. Coincidentally, the second independent YouTuber to hit 50 million and friend of PewDiePie, MrBeast, decided to make his own YouTube rewind for 2020 since YouTube did not due to COVID.</dd>
+					<dt>FUNNY GAMING MONTAGE!, FUNNY MONTAGE...#2, A Funny Montage </dt>
+						<dd>Unsurpsingly, these are one of the biggest videos on PewDiePie's channel. While these are, as the name implies, funny gaming montages, they are a compilation of videos that blew PewDiePie up. His best moments and greatest hits and he put them all into one video. Viewers come back to these videos frequently to remember a younger PewDiePie.</dd>
+				</dl>
+			</div>
+		</div>
+
+		<footer>
+			<a href="https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fsolace.ist.rit.edu%2F~rpd7831%2F140%2Fproject2%2Fvids.html#l143c11"><img src="https://github.com/rdranch/ISTEWebAndDesign/blob/main/html-5-icon-2.png?raw=true" alt="HTML5 Validated" title="HTML Validated" style="width:100px; height:auto"></a>
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsolace.ist.rit.edu%2F~rpd7831%2F140%2Fproject2%2Fvids.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" title="CSS validated" style="width:100px; height:auto"></a>
+		</footer>
+	</body>
+</html>

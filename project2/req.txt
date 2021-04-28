@@ -1,0 +1,6 @@
+- Navigation and site title on every page
+- Index/homepage, references page, and 3 others
+- HTML and CSS must validate
+- Must display on mobile devices
+- 6 references of research
+- All references (images, etc) must be in APA format
